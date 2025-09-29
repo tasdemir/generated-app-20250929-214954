@@ -1,6 +1,6 @@
 # KadroKur: Amateur Football Match Organizer
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/tasdemir/generated-app-20250929-214954)
 
 KadroKur is a minimalist, mobile-first web application designed to streamline the organization of amateur football matches. It connects players with coaches, allowing for easy match creation, player recruitment, and team management. The system features three distinct user roles: Admin, Coach, and Player, each with a tailored dashboard and specific permissions. Coaches can create match events, which generate a unique code for players to join. Players can search for matches and register their attendance status. Coaches then manage the roster, assign players to teams, and after the match, award points and performance tags. A dynamic scoreboard ranks players based on their performance, with filters for location, creating a competitive and engaging community platform.
 
@@ -94,7 +94,7 @@ This project is designed for easy deployment to Cloudflare's global network.
 
 Alternatively, you can deploy directly from your GitHub repository with a single click.
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/tasdemir/generated-app-20250929-214954)
 
 ## Contributing
 
