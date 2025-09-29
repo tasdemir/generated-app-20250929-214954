@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* KadroKur Palette */
+    --kadro-navy-hsl: 226 65% 21%; /* rgb(23 37 84) */
+    --kadro-green-hsl: 145 63% 45%; /* rgb(34 197 94) */
+    --kadro-slate-hsl: 215 28% 95%; /* rgb(241 245 249) */
+    /* Core Colors */
+    --background: 215 28% 95%; /* kadro-slate */
+    --foreground: 226 65% 10%;
+    --primary: 145 63% 45%; /* kadro-green */
+    --primary-foreground: 0 0% 100%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --border: 0 0% 89.8%;
+    --ring: 145 63% 45%; /* kadro-green */
+    --card: 0 0% 100%;
+    --card-foreground: 226 65% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 226 65% 10%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --input: 0 0% 89.8%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* KadroKur Palette */
+    --kadro-navy-hsl: 226 65% 21%;
+    --kadro-green-hsl: 145 63% 45%;
+    --kadro-slate-hsl: 215 28% 95%;
+    /* Core Colors */
+    --background: var(--kadro-navy-hsl);
+    --foreground: var(--kadro-slate-hsl);
+    --primary: var(--kadro-green-hsl);
+    --primary-foreground: 0 0% 100%;
+    --muted: 226 65% 25%;
+    --muted-foreground: 0 0% 63.9%;
+    --border: 226 65% 30%;
+    --ring: var(--kadro-green-hsl);
+    --card: 226 65% 15%;
+    --card-foreground: var(--kadro-slate-hsl);
+    --popover: 226 65% 15%;
+    --popover-foreground: var(--kadro-slate-hsl);
+    --secondary: 226 65% 25%;
+    --secondary-foreground: var(--kadro-slate-hsl);
+    --accent: 226 65% 25%;
+    --accent-foreground: var(--kadro-slate-hsl);
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --input: 226 65% 30%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+}
+@layer components {
+  .btn-primary {
+    @apply bg-kadro-green text-white hover:bg-opacity-90;
+  }
+  .bg-pattern {
+    background-image: radial-gradient(hsl(var(--muted)) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+}
